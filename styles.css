@@ -26,6 +26,7 @@ body {
     background-color: var(--Dark-bg);   
     color: var(--light-text);   
     line-height: 1.6;
+    display: flex;
 }
 h1 {
     font-size: 3.5rem;
@@ -64,21 +65,7 @@ section {
     font-family: "Space Grotesk", sans-serif;
     border-bottom: 2px solid var(--Blue-bright); 
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 5%;
-    width: 1440;
-    margin: 0 auto;
-    background-color: #171719;
-}
-.nav-links {
-    display:flex;
-    gap: 1rem;
-    font-family: "pt mono", monospace;
-    font-size: 2rem;
-}
+
 .hero{
     background-image:-webkit-image-set("./assets/img/header image.png");
     background-repeat: no-repeat; 
@@ -219,7 +206,7 @@ section {
     height: 100%;
     align-items: center;
     border-radius: 4px;
-    transition: var(--transition)
+    transition: var(--transition);
 }
 .communitygallery-container img:hover {
     transform: scale(1.03);
@@ -259,4 +246,59 @@ section {
     text-align: left;
     margin: 5%;
 }
+.sidebar {
+  width: 280px;
+  height:max-content
+  flex-direction: column;
+  background-color: #111111;
+}
+button {
+  gap: 25px;
+  align-items:center;
+  font-size: 16px;
+  line-height: 1;
+  padding:  15px;
+  background:none;
+  border-radius: 5px;
+  margin-top: 10%;
+  width: 150px;
+  color: #1E45C5;
+  cursor: pointer;
+}
+.sidebar-header {
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  position: fixed;
+}
+.sidebar-inner {
+  width: 300px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-right: #1E45C5 2px solid;
+}
+.sidebar-nav {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+}
+.sidebar-footer{
+  margin-top: auto;
+  padding: 30px;
+}
+.sidebar-nav img{
+   
+}
+span{
+    font-size: 0.8rem;
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+    font-family: "PT Mono", monospace;
+    
+}
+.img
 

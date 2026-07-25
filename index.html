@@ -16,17 +16,35 @@
     </style>
 </head>
 <body>
-<header>
-    <nav class="navbar">
-       <img src="./assets/img/centauri logo 1.png" 
-            <ul class="nav-links">  
-                <li><a href="#inicio">inicio</a></li>
-                <li><a href="#noticias">noticias</a></li>
-                <li><a href="#foro">foro</a></li>
-                <li><a href="#galeria">archivos</a></li>
-            </ul>
-    </nav>
-</header>
+<section class="sidebar">
+    <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <img src="./assets/img/centauri logo 1.png" class="sidebar-logo" />
+        </header>
+        <nav class="sidebar-nav">
+          <button>
+            <img src="./assets/img/Star.png" />
+            <span>Home</span>
+          </button>
+          <button>
+            <img src="./assets/img/Star.png" />
+            <span>noticias</span>
+          </button>
+          <button>
+            <img src="./assets/img/Star.png" />
+            <span>archivos</span>
+          </button>
+          <button>
+            <img src="./assets/img/Star.png" />
+            <span>foro</span>
+          </button>
+        <footer class="sidebar-footer">
+            <img src="./assets/img/profile-button.png" class="login-img"/>
+            <button>Log in</button>
+        </footer> 
+        </nav>
+    </div>
+</section>
     <main> 
         <section id="inicio" class="hero"> 
              
@@ -143,7 +161,7 @@
                         <input type="text" placeholder="escribe aqui"/>
                     </div>
                     <div class="input-field">
-                        <label for="detalles">detalle aqui:</label>
+                        <label for="detalles">detalle:</label>
                         <input type="textarea" placeholder="escribe aqui"/>
                     </div>
                     <div class="input-field">
@@ -173,12 +191,6 @@
             </div>
         </section>
     </main> 
-    <section>
-        <div class="footer-content">
-            <img src="./assets/img/centauri logo 1.png" alt=" logo-nav"> 
-            <div class="social-links">
-                <a href="https://github.com/Corvus-rgb" target="_blank"><i class="fab fa-github"></i></a>         
-    </section>
         </div> 
 </body>
 </html>
