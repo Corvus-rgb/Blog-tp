@@ -9,8 +9,9 @@
     <script src="https://kit.fontawesome.com/37c86ed8dc.js" crossorigin="anonymous"></script>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
     </style>
 </head>
 <body>
@@ -20,23 +21,23 @@
         </header>
         <nav class="sidebar-nav">
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/star small.svg" />
             <span>Home</span>
           </button>
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/noticias.svg" />
             <span>noticias</span>
           </button>
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/galeria.svg" />
             <span>Galeria</span>
           </button>
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/comment icon-small.svg" />
             <span>foros</span>
           </button>
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/cometa.svg" />
             <span>Eventos</span>
           </button>
           <button>
@@ -44,10 +45,11 @@
             <span>Novedades</span>
           </button>
         <footer class="sidebar-footer">
+        <div class="sidebar-log-in">
             <img src="./assets/img/profile-button.png" class="login-img"/>
             <button>Log in</button>
+        </div>
         </footer> 
-        </nav>
     </div>
     <main> 
         <section id="inicio" class="hero"> 
@@ -57,56 +59,97 @@
                   <h1>COMUNIDAD ASTRONOMICA CENTAURI </h1>
                   <h2>Astronomía · Telescopios · Astrofotografía · Observación </h2>
                    <p>Expertos en divulgación astronómica y aficionados dispuestos a compartir sus intereses y conocimientos. Aprende a travez de charlas y eventos organizados por la comunidad!</p>
-                   <a class="btn btn-primary" href="#"join us>Unete a la comunidad!</a>
+                   <a class="btn-" href="#"join us>Unete a la comunidad!</a>
                 </div>
             </div>
         </section>
-        <section id="body" class="cards">
+        <section id="noticias" class="noticias">
             <div class="section-title">
              <h2>Foro de noticias</h2>
              <h3>Noticias cientificas de organismos oficiales</h3>
-            </div>
-            <div class="card">
+            </div>  
+        <div class="cards">
+            <div class="card-container">
                     <img src="./assets/img/card image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
                     <h3>Lorem ipsum is</h3>
                     <h2>Lorem ipsum is simply dummy text</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
                     <div class="card-interactions">
-                        <img src="./assets/img/Star.png" alt=""><span>4.5k</span>
-                        <a class="btn" href="#"noticias>ver articulo completo</a>
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
+                        </div>
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/comment icon.svg" alt=""><span>27</span>
+                        </div>
+                        <a class="btn" href="#"noticias>leer</a>
                     </div>
                 </div>
             </div>
+            <div class="card-container">
+                    <img src="./assets/img/card image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
+                <div class="card-info">
+                    <h3>Lorem ipsum is</h3>
+                    <h2>Lorem ipsum is simply dummy text</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <div class="card-interactions">
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
+                        </div>
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/comment icon.svg" alt=""><span>27 </span>
+                        </div>
+                        <a class="btn" href="#"noticias>leer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                    <img src="./assets/img/icons(SVG)/ image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
+                <div class="card-info">
+                    <h3>Lorem ipsum is</h3>
+                    <h2>Lorem ipsum is simply dummy text</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <div class="card-interactions">
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
+                        </div>
+                        <div class="card-reactions">
+                           <img src="./assets/img/icons(SVG)/comment icon.svg" alt=""><span>27</span>
+                        </div>
+                        <a class="btn" href="#"noticias>leer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
         <section>
             </section>
         <section id="blog" class="blog forum">
             <div class="section-title">
-             <h3>Crea un user y forma parte de nuestro blog!</h3>
+             <h3>publicaciones recientes</h3>
              <p>Comparte experiencias. cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!</p>
             </div>
             <div class="blog-container">
                <h3>ultimos posts</h3> 
                 <div class="blog-card">
-                    <div class="blog-img">
-                        <img src="./assets/img/profile-button.png" alt="Proyecto 1">
-                    </div>
+                     <div class="profile-blog"><img src="./assets/img/profile-button.png" alt="Proyecto 1"></span></div>
                     <div class="blog-comment">
-                      <p>/username00</p>
-                      <h3><span>LOREM IPSUM IS SIMPLY DUMMY TEXT OF</span></h3>
+                      <span><p>/username00</p></span>
+                      <h3><span>//LOREM IPSUM IS SIMPLY DUMMY TEXT OF</span></h3>
                       <p>took a galley of type and scrambled it to make a type specimen book?</p>
                     </div>
                     <div class="blog-tags">
                         <span>/telescopes</span>
-                        <span>astrophotography</span>
+                        <span>/astrophotography</span>
                     </div>
-                    <div class="blog-interactions">
-                        <span>favorites</span>
-                        <span>Comentarios</span>
-                        <button>LEER TODO</button>
-                    </div>
-                </div>
+                        <div class="blog-reactions-container">
+                            <div class="blog-reactions">
+                               <img src="./assets/img/Star.png" alt=""><span>4.5k</span>
+                            </div>
+                            <div class="blog-reactions">
+                               <img src="./assets/img/Star.png" alt=""><span>10 respuestas</span>
+                            </div>
+                </div>  </div>
             </div>
         </section>
         <section id="gallery" class="gallery">
@@ -142,15 +185,12 @@
         </section>
         
         <section id="contact-us" class="contactanos">
-            <div class="section-title">
-                    
-            </div>
+            <div class="contact-text">
                 <h3>Quieres formar parte de las publicaciones oficiales del foro</h3>
                 <p>Somos un equipo de profesionales y aficinados del internet con el objetivo de divulgar informacion a la par que fortalecemos la comunidad</p> 
-            </div>
-            <div>
-                
-                <h3>Quieres formar parte del blog? crea tu user aqui!</h3>
+                <h3>Quieres formar parte del blog? crea tu user aqui!
+                   <p></p> Comparte experiencias. cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!
+                </h3>
                 <span><button>register</button></span>
                 <span><button>log in</button></span>
             </div > 
@@ -172,8 +212,8 @@
                         <input type="text" placeholder="escribe aqui"/>
                     </div>
                     <div class="input-field">
-                        <label for="detalles">detalle:</label>
-                        <input type="textarea" placeholder="escribe aqui"/>
+                        <label for="comment">Detalles</label>
+                        <textarea id="comment" name="comment" placeholder="Cuentanos un poco de usted/es!..." required></textarea>
                     </div>
                     <div class="input-field">
                         <label for="organizacion">organizacion</label>
@@ -202,6 +242,6 @@
             </div>
         </section>
     </main> 
-        </div> 
+
 </body>
 </html>

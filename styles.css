@@ -23,68 +23,59 @@ body {
     font-weight: 400;
     font-style: normal;
     width: 100;
-    background-color: var(--Dark-bg);   
+    background-color: rgb(10, 10, 10); 
     color: var(--light-text);   
     line-height: 1.6;
     display: flex;
 }
 h1 {
     font-size: 3.5rem;
-    font-family: "PT Mono", monospace;
+    font-family: "Sixtyfour Convergence", sans-serif;
     font-style: normal;
     font-weight: 400;
 
 }
 h2 {
     font-family: "PT Mono", monospace;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 h3 {
     font-family: "PT Mono", monospace;
-    font-size: 1.7 rem;
-    color: #1E45C5;
+    font-size: 1rem;
+    color: var(--Blue-bright);
 }
 p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--light-text);
-    margin-bottom: 1.5rem;
     font-family: "PT Mono", monospace;
+    font-weight: 100;
 
 }
 section {
-    padding: 2rem 5%;
+    padding: 1rem 5%;
     max-width: 1400px;
     margin: 0 auto;
 }
 .section-title {
     margin-bottom: 3rem;
     text-align: center;
-    position: relative;
-    padding-bottom: 2rem;
-    font-family: "Space Grotesk", sans-serif;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--Blue-bright); 
 }
+.btn-hover-unico{
+    padding: 10px;
+    position: absolute;
+    border: #BE4A1A solid;
+    margin-top: 2%;
+    border-radius: 8px;
+    transition: var(--transition);
+    color: #f5f5f5;
 
-.hero{
-    background-image:-webkit-image-set("./assets/img/header image.png");
-    background-repeat: no-repeat; 
-    background-size:contain;
-    background-position: top right;
-    
 }
-.hero-content {
-  display: flex;
-  align-items:left;
-  gap: 5rem;
-  border-left: 3px solid var(--Blue-bright);
-  align-content: flex-start;
-  margin-bottom: 30%;
-}
-.hero-content h2{
-    color: #BE4A1A;
-    font-size: 1.2rem;
-    margin-bottom: 2%;
+.btn-hover-unico:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(180, 43, 9, 0.3);
 }
 .btn {
     display: inline-block;
@@ -92,46 +83,53 @@ section {
     border-radius: 10px;
     cursor: pointer;
     transition: var(--transition);
-    border: none;
-    font-weight: 700;
-    font-family: monospace;
-    font-size: 1.3rem;
-    background-color: #f5f5f5;
 }
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
-.hero {
+.hero{
+    background-image:-webkit-image-set("./assets/img/Nasa Archice- header img.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-position: top right;
+    border-bottom: 3px solid #793113;
+    height: 700px;
     display: flex;
-    padding-top: 5rem;
-    height: 900px;
-    
 }
+
 .hero-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-    border-left: 3px solid var(--Blue-bright);
+    gap: 1rem;
+    border-left: 3px solid var(--Details-color);
     padding-left: 50px;
+}
+.hero-content h2{
+    color: #BE4A1A;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
 }
 .hero-text{
     max-width: 500px;
     margin-top: 10%;
 }
-.card{
-    margin: 0 auto;
-    max-width: 500px;
-    display:column;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+.cards{
+    display: flex;
+    column-gap: 10px;
+}
+.card-container{
     border: 3px solid var(--Blue-bright);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+ 
 }
 .card-image{
     width: 100%;
-    display: block;
+    object-fit: cover;
+    height: 180px;
+
 }
 .card-info{
     line-height: 1,5;
@@ -147,34 +145,25 @@ section {
     border-top: #1E45C5 2px solid;
     margin-top: 10px;
     align-items: center;
+    display: flex;
 }
 .card-interactions .btn {
-    margin-left: 50%;
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
     transition: var(--transition);
-    font-weight: 500;
     font-size: 0.8rem;
     background-color: #182051;
     color: #f5f5f5;
+    margin-top: 5%;
+    margin-left: 15%;
 }
 .card-interactions img {
  cursor: pointer;
+ 
 }
-.card-interactions .btn {
-    margin-left: 50%;
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: var(--transition);
-    font-weight: 500;
-    font-size: 0.8rem;
-    background-color: #182051;
-    color: #f5f5f5;
+.card-reactions{
+   margin-left: 20px;
+   margin-top: 20px;
 }
+
 .archivegallery-container {
     width: 90%;
     max-width:1114px;
@@ -225,15 +214,24 @@ section {
     background-color:#171719;
     color: #1E45C5;
 }
+.contactanos{
+    background-image:-webkit-image-set("https://images-assets.nasa.gov/image/art002e009212/art002e009212~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
+    display: flex;
+}
 .form-container{
     border: #1E45C5 2px solid;
     border-radius: 8px;
-    width: 400px;
+    width: 500px;
     margin-left: 60%; 
+    background-color: #171719;
+    padding: 20px;
+    margin-left: 8%;
+}
+.contact-text{
+    max-width: 450px;
 }
 .form {
     height: 700px;
-    display: flex;
     justify-content:center;
     border: #1E45C5 2px solid;
     text-align: center;
@@ -241,8 +239,12 @@ section {
 .input-field{
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin: 5%;
+    margin: 2%;
+    font-size: 14px;
+}
+input{
+   background-color: var(--light-text);
+   border-radius: 5px;
 }
 .sidebar {
   width: 280px;
@@ -250,13 +252,21 @@ section {
   background-color: #111111;
 }
 button {
-  padding: 5px;
+  padding: 10px;
   background: none;
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
   border-color: #1E45C5;
-  margin-top: 10%;
+  margin-top: 8%;
+  cursor: pointer;
+  transition: var(--transition);
+  color: #f5f5f5;
+  width: 200px;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
 .sidebar-header {
   height: 50px;
@@ -264,16 +274,15 @@ button {
   margin:20px;
 }
 .sidebar-header img{
-   margin-left: 35%;
+   margin-left: 50%;
 }
 .sidebar-inner {
   width: 300px;
   height: inherit;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 10px;
   border-right: 2px #1E45C5 solid;
   padding-right: 10%;
+  background-color: #111111;
 }
 .sidebar-nav {
   display: grid;
@@ -285,11 +294,77 @@ button {
   margin-top: auto;
   padding: 30px;
 }
+.sidebar-footer img{
+    width: 80px;
+}
+.sidebar-log-in{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 span{
     font-size: 0.8rem;
     color: var(--light-text);
-    margin-bottom: 1.5rem;
     font-family: "PT Mono", monospace;
+    margin-left: 5px;
     
 }
+.blog-container{
+    margin: 0 auto;
+    display:column;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.blog-card{
+    margin-bottom: 5%;
+    padding: 10px;
+    border: 2px solid var(--Blue-bright);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.profile-blog{
+    padding-left: 10px;
+    position: absolute;
+    max-width: 60px;
+}
+.profile-blog img{
+    padding-left: 10px;
+    position: absolute;
+    max-width: 60px;
+}
+.blog-comment{
+    padding-left: 8%;
+}
+.blog-comment p{
+ display: flex;
+}
+.blog-comment span{
+ color: #1E45C5;
+ display: flex;
+ margin: 5px;
+}
+.blog-reactions-container{
+    display: flex;
+    margin-left: 60%;
+}
 
+.blog-reactions{
+   margin-left: 20px;
+   
+}
+.blog-tags{
+    margin-left: 15%;
+    margin-left: 7%;
+    padding: 10px;
+    opacity: 70%;
+}
+.blog-tags span {
+    background-color: #182051;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-family: monospace;
+    cursor: pointer;
+    margin-top: 21px;
+  
+}
