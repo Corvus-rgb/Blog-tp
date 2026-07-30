@@ -15,11 +15,11 @@
     </style>
 </head>
 <body>
-    <div class="sidebar-inner">
-        <header class="sidebar-header">
-          <img src="./assets/img/centauri logo 1.png" class="sidebar-logo" />
-        </header>
-        <nav class="sidebar-nav">
+    <!-- intento de sidebar. Iconos realizados localmente y exportados en SVG-->
+<header class="sidebar-inner">
+          
+    <nav class="sidebar-nav">
+            <img src="./assets/img/centauri logo 1.png" class="sidebar-logo" />
           <button>
             <img src="./assets/img/icons(SVG)/star small.svg" />
             <span>Home</span>
@@ -41,40 +41,42 @@
             <span>Eventos</span>
           </button>
           <button>
-            <img src="./assets/img/Star.png" />
+            <img src="./assets/img/icons(SVG)/star.svg" />
             <span>Novedades</span>
           </button>
-        <footer class="sidebar-footer">
         <div class="sidebar-log-in">
-            <img src="./assets/img/profile-button.png" class="login-img"/>
-            <button>Log in</button>
-        </div>
-        </footer> 
-    </div>
+            <img src="./assets/img/icons(SVG)/blog logo.svg" class="login-img"/>
+            <button class="sidebar-log-in-btn">Log in</button>
+        </div>  
+    </nav>   
+</header>
     <main> 
+         <!-- home, con h1 unico -->
         <section id="inicio" class="hero"> 
-             
             <div class="hero-content">
                 <div class="hero-text">
                   <h1>COMUNIDAD ASTRONOMICA CENTAURI </h1>
                   <h2>Astronomía · Telescopios · Astrofotografía · Observación </h2>
                    <p>Expertos en divulgación astronómica y aficionados dispuestos a compartir sus intereses y conocimientos. Aprende a travez de charlas y eventos organizados por la comunidad!</p>
-                   <a class="btn-" href="#"join us>Unete a la comunidad!</a>
+                   <a class="btn" href="#"contacto>unete a la comunidad!</a>
                 </div>
             </div>
         </section>
-        <section id="noticias" class="noticias">
+        <!-- div de titulos principales para dividir cada seccion-->
+    <section id="noticias" class="noticias">
             <div class="section-title">
              <h2>Foro de noticias</h2>
              <h3>Noticias cientificas de organismos oficiales</h3>
             </div>  
+             <!-- seccion de cards -->
         <div class="cards">
             <div class="card-container">
-                    <img src="./assets/img/card image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
+                    <img src="https://www-astronomy-com.translate.goog/wp-content/uploads/2026/05/ASY-BT0726_01.png?resize=1536&_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc,https://www-astronomy-com.translate.goog/science/rcw-36-a-bird-of-prey-sails-away/1443?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
-                    <h3>Lorem ipsum is</h3>
+                    <h4>RCW 36: Un ave de rapiña se aleja en barco.</h4>
                     <h2>Lorem ipsum is simply dummy text</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <p>Esta nebulosa, que se asemeja a un halcón, cuenta en su centro con un cúmulo abierto de estrellas jóvenes y masivas, rodeado de brillantes nubes de gas de hidrógeno.</p>
+                    <div class="references"> <p>Por Richard Talcott | Publicado: 28/07/2026</p></div>
                     <div class="card-interactions">
                         <div class="card-reactions">
                            <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
@@ -89,9 +91,10 @@
             <div class="card-container">
                     <img src="./assets/img/card image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
-                    <h3>Lorem ipsum is</h3>
-                    <h2>Lorem ipsum is simply dummy text</h2>
+                    <h4>Maravillas ocultas del universo</h4>
+                    <h2>Estos objetos muestran el cielo profundo, con objetivos para todos los niveles de observación. </h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <div class="references"> <p>Por David J. Eicher | Publicado: 28/07/2026 </p></div>
                     <div class="card-interactions">
                         <div class="card-reactions">
                            <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
@@ -106,9 +109,10 @@
             <div class="card-container">
                     <img src="./assets/img/icons(SVG)/ image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
-                    <h3>Lorem ipsum is</h3>
+                    <h4>Lorem ipsum is</h4>
                     <h2>Lorem ipsum is simply dummy text</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <div class="references"> <p>Por Richard Talcott | Publicado: 28/07/2026</p></div>
                     <div class="card-interactions">
                         <div class="card-reactions">
                            <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
@@ -121,18 +125,20 @@
                 </div>
             </div>
         </div>
-        </section>
-        <section>
-            </section>
+    </section>
+    <!-- cards en estilo Foros para poner mas en contexto la idea de la pagina-->
         <section id="blog" class="blog forum">
             <div class="section-title">
              <h3>publicaciones recientes</h3>
              <p>Comparte experiencias. cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!</p>
             </div>
-            <div class="blog-container">
+            <div class="blog-title">
                <h3>ultimos posts</h3> 
+            </div>
                 <div class="blog-card">
-                     <div class="profile-blog"><img src="./assets/img/profile-button.png" alt="Proyecto 1"></span></div>
+                    <div class="profile-blog">
+                        <img src="./assets/img/profile-button.png" alt="profile picture">
+                    </div>
                     <div class="blog-comment">
                       <span><p>/username00</p></span>
                       <h3><span>//LOREM IPSUM IS SIMPLY DUMMY TEXT OF</span></h3>
@@ -142,54 +148,70 @@
                         <span>/telescopes</span>
                         <span>/astrophotography</span>
                     </div>
+                    <!-- me gusta y comentarios. Con unas complicaciones para ubicarlos correctamente en css-->
                         <div class="blog-reactions-container">
                             <div class="blog-reactions">
-                               <img src="./assets/img/Star.png" alt=""><span>4.5k</span>
+                               <img src="./assets/img/icons(SVG)/star small.svg" alt=""><span>4.5k</span>
                             </div>
                             <div class="blog-reactions">
-                               <img src="./assets/img/Star.png" alt=""><span>10 respuestas</span>
+                               <span>10 respuestas</span>
                             </div>
-                </div>  </div>
-            </div>
+                        </div>    
+                </div>       
         </section>
-        <section id="gallery" class="gallery">
+        <!-- galeria, dividida en 2 partes-->
+    <section id="gallery" class="gallery">
+        
             <div class="section-title">
                 <h2>Archivos</h2>
               <h3>Galeria de organismos oficiales</h3>
             </div> 
-            <div class="archivegallery-container">
+        <div class="galeria-flex">
+            <div class="archivegallery">
                 <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
                 <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
                 <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
-                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/07/STScI-01KX448CEBRHBBJW579AG64G0H.jpg?w=1200&h=675&fit=crop&crop=faces%2Cfocalpoint">
+                <img src="">
                 <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/07/STScI-01KVT4GQMQ5MXV6XDPFPZMXG65.png?fit=clip&crop=faces%2Cfocalpoint&w=300">
                 <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/07/STScI-01KVT7DD8N4T05XGZCT15QZEZ9.png?fit=clip&crop=faces%2Cfocalpoint&w=300">
                 <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
                 <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
                 <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
+                <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
+                <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
+                <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
             </div>
             <a class="btn" href="#"galeria>ver todo</a>
+        </div>
+        
             <div class="section-title">
               <h3>Galeria de la comunidad</h3>
             </div> 
-            <div class="communitygallery-container">
+        <div class="galeria-flex">
+            <div class="communitygallery">
                 <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
                 <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
                 <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
                 <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-
             </div>
              <a class="btn" href="#"galeria>ver galeria</a>
-        </section>
-        
+        </div>
+    </section>
+            <!-- seccion de contacto, con form-->
+            <div class="section-title">
+                <h2>Contacto</h2>
+                <h3>apreciamos tu participacion en el blog! </h3>
+
+            </div> 
         <section id="contact-us" class="contactanos">
+           
             <div class="contact-text">
                 <h3>Quieres formar parte de las publicaciones oficiales del foro</h3>
-                <p>Somos un equipo de profesionales y aficinados del internet con el objetivo de divulgar informacion a la par que fortalecemos la comunidad</p> 
-                <h3>Quieres formar parte del blog? crea tu user aqui!
-                   <p></p> Comparte experiencias. cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!
+                <p>Somos un equipo de profesionales y aficinados del internet con el objetivo de divulgar informacion a la par que fortalecemos la comunidad.
+                   Todo aquel profesional que desee sumarse al objetivo es bienvenido!
+                </p> 
+                <h3> No te pierdas las novedades, crea tu user!
+                   <p> Comparte experiencias, cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!</p>
                 </h3>
                 <span><button>register</button></span>
                 <span><button>log in</button></span>
@@ -197,7 +219,7 @@
             <div class="form-container">
                 
                 <form action="#">
-                    <h3>contactanos!</h3> 
+                    <h3>formulario de postulacion!</h3> 
                     <div class="input-field">
                        <label for="name">Nombre/equipo:</label>
                        <input type="text" placeholder="escribe aqui"/>
@@ -209,7 +231,7 @@
                 
                     <div class="input-field">
                         <label for="telefono">telefono (opcional):</label>
-                        <input type="text" placeholder="escribe aqui"/>
+                        <input type="tel" placeholder="escribe aqui"/>
                     </div>
                     <div class="input-field">
                         <label for="comment">Detalles</label>
@@ -234,7 +256,7 @@
                         <br>
                         <input type="radio" name="transporte" value="3">Retirado/a
                     </div>
-                    <div>
+                    <div class="form-buttons">
                        <input type="submit" value="Enviar" />
                        <input type="reset" value="limpiar" />
                     </div>
@@ -242,6 +264,7 @@
             </div>
         </section>
     </main> 
-
+    <!-- aca intente implementar un footer sencillo. 
+     lo trate dentro del main para que entre dentro del ancho del resto de secciones...-->
 </body>
 </html>

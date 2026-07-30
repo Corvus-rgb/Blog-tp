@@ -1,10 +1,10 @@
 :root {
     --Blue-bright: #1E45C5;
-    --Dark-bg : #171719;
+    --Dark : #171719;
     --Darker-bg : #171719;
     --light-text : #f5f5f5;
     --Blue-base : #182051;
-    --Details-color : #BE4A1A;
+    --naranja : #BE4A1A;
     --transition : all 0.3s ease;
 }
 * {
@@ -14,19 +14,15 @@
 }
 html {
     scroll-behavior: smooth;
-    scrollbar-color: var(--Blue-bright) var(--Dark-bg);
+    scrollbar-color: var(--Blue-bright) var(--Dark);
 }
 
 body {    
-    font-family: "Inconsolata", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    width: 100;
     background-color: rgb(10, 10, 10); 
     color: var(--light-text);   
     line-height: 1.6;
     display: flex;
+    
 }
 h1 {
     font-size: 3.5rem;
@@ -36,7 +32,7 @@ h1 {
 
 }
 h2 {
-    font-family: "PT Mono", monospace;
+    font-family: "Inconsolata", monospace;
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -44,6 +40,12 @@ h3 {
     font-family: "PT Mono", monospace;
     font-size: 1rem;
     color: var(--Blue-bright);
+}
+h4 {
+    font-family: "PT Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--Blue-bright);
+
 }
 p {
     font-size: 0.7rem;
@@ -54,46 +56,61 @@ p {
 }
 section {
     padding: 1rem 5%;
-    max-width: 1400px;
+    max-width: 80vw;
     margin: 0 auto;
 }
+/* estilo de titulos - divisores de secciones*/
 .section-title {
     margin-bottom: 3rem;
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--Blue-bright); 
 }
-.btn-hover-unico{
-    padding: 10px;
-    position: absolute;
-    border: #BE4A1A solid;
-    margin-top: 2%;
-    border-radius: 8px;
-    transition: var(--transition);
-    color: #f5f5f5;
-
+/* botones del sidebar*/
+button {
+  padding: 10px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  border-color: var(--Blue-bright);
+  margin-top: 8%;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--light-text);
+  width: 200px;
 }
-.btn-hover-unico:hover{
+button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(180, 43, 9, 0.3);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
+/* botones generales - perspnalizacion base */
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
     cursor: pointer;
     transition: var(--transition);
+    font-family: "PT Mono", monospace;
 }
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
 }
+span{
+    font-size: 0.8rem;
+    color: var(--light-text);
+    font-family: "PT Mono", monospace;
+    margin-left: 5px;
+    
+}
+
 .hero{
-    background-image:-webkit-image-set("./assets/img/Nasa Archice- header img.jpg");
+    background-image:-webkit-image-set("https://images-assets.nasa.gov/image/art002e009575/art002e009575~large.jpg?w=1920&h=1440&fit=clip&crop=faces%2Cfocalpoint");
     background-repeat: no-repeat; 
     background-size:cover;
     background-position: top right;
-    border-bottom: 3px solid #793113;
+    border-bottom: 3px solid var(--naranja);
     height: 700px;
     display: flex;
 }
@@ -102,17 +119,78 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    border-left: 3px solid var(--Details-color);
-    padding-left: 50px;
+    border-left: 3px solid var(--naranja);
+    padding-left: 70px;
 }
 .hero-content h2{
-    color: #BE4A1A;
+    color: var(--naranja);
     font-size: 1.2rem;
     margin-bottom: 2%;
 }
 .hero-text{
     max-width: 500px;
     margin-top: 10%;
+}
+
+/* boton personalizado para el hero 1*/
+.hero .btn{
+    padding: 10px;
+    position: absolute;
+    border: 2px solid var(--naranja);
+    margin-top: 2%;
+    border-radius: 8px;
+    transition: var(--transition);
+    color: var(--light-text);
+    font-family: "PT Mono", monospace;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(238, 90, 64, 0.3);
+}
+.sidebar-header {
+  height: 50px;
+  position: fixed;
+  margin:20px;
+}
+
+.sidebar-inner {
+  min-width: 260px;
+  height: inherit;
+  padding-bottom: 10px;
+  border-right: 2px var(--Blue-bright) solid;
+  padding-right: 10%;
+  background-image: -webkit-image-set("https://images-assets.nasa.gov/image/art002e009298/art002e009298~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
+  background-repeat: no-repeat; 
+}
+
+.sidebar-nav {
+  display: grid;
+  position: fixed;
+   margin-left: 2%;
+}
+/* intento de posicionar el logo en el centro..*/
+.sidebar-logo{
+   margin-left: 55px;
+    margin-top: 20px;
+}
+.sidebar-inner img{
+    max-width: 100px;
+}
+.sidebar-log-in{
+  margin-top: auto;
+  padding: 30px;
+}
+.sidebar-log-in img{
+    width: 80px;
+}
+.sidebar-log-in-btn{
+    max-width: 60px;
+    padding: 3px;
+}
+ /* cards-seccion de noticias*/
+.noticias{
+    background-image: -webkit-image-set("https://images-assets.nasa.gov/image/art002e009298/art002e009298~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
+    object-fit: cover;
 }
 .cards{
     display: flex;
@@ -128,21 +206,26 @@ section {
 .card-image{
     width: 100%;
     object-fit: cover;
-    height: 180px;
+    max-height: 180px;
 
 }
 .card-info{
     line-height: 1,5;
-    padding: 30px;
+    padding: 20px;
 }
 .card-info h2{
     font-size: 0.8rem;
     margin-bottom: 5%;
 
 }
+.references p{
+   font-size: 0.5rem;
+   margin-top: 10px;
+
+}
 .card-interactions{
     margin-top: 9px;
-    border-top: #1E45C5 2px solid;
+    border-top: var(--Blue-bright) 2px solid;
     margin-top: 10px;
     align-items: center;
     display: flex;
@@ -150,39 +233,49 @@ section {
 .card-interactions .btn {
     transition: var(--transition);
     font-size: 0.8rem;
-    background-color: #182051;
-    color: #f5f5f5;
+    background-color: var(--Blue-base);
+    color: var(--Details-color);
     margin-top: 5%;
     margin-left: 15%;
 }
 .card-interactions img {
  cursor: pointer;
- 
+ width: 16px;
 }
 .card-reactions{
-   margin-left: 20px;
+   margin-left: 11px;
    margin-top: 20px;
+   padding: 3px;
 }
+ /* galeria*/
+.galeria-flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: center;
 
-.archivegallery-container {
+}
+ /* galeria 1*/
+.archivegallery {
     width: 90%;
     max-width:1114px;
     margin:30px auto;
     display:contents;
     gap: 20px;
 }
-.archivegallery-container img {
-    width: 300px;
-    height: 250px;
+.archivegallery img {
+   width: 200px;
+   height: 170px;
     border-radius: 4px;
     transition: var(--transition);
     object-fit: cover;
 }
-.archivegallery-container img:hover {
+.archivegallery img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 20px rgba(72, 54, 231, 0.5);
 }
-.communitygallery-container {
+/* galeria 2*/
+.communitygallery {
     width: 90%;
     max-width:1114px;
     margin:30px auto;
@@ -190,126 +283,38 @@ section {
     gap: 20px;
 }
 
-.communitygallery-container img {
-    width: 300px;
-    height: 250px;
+.communitygallery img {
+    width: 200px;
+    height: 170px;
     border-radius: 4px;
     transition: var(--transition);
     object-fit: cover;
 }
-.communitygallery-container img:hover {
-    transfrm: scale(1.03);
+.communitygallery img:hover {
+    transform: scale(1.03);
     box-shadow: 0 0 20px rgba(34, 28, 145, 0.5);
 
 }
+/* boton de galeria por separado para ajustar al contenido*/
 .gallery .btn{
     margin-left: 80%;
     border: 2px solid;
-    border-color: #1E45C5;
+    border-color: var(--Blue-base);
     border-radius: 10px;
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
-    font-size: 1rem;
-    background-color:#171719;
-    color: #1E45C5;
-}
-.contactanos{
-    background-image:-webkit-image-set("https://images-assets.nasa.gov/image/art002e009212/art002e009212~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
-    display: flex;
-}
-.form-container{
-    border: #1E45C5 2px solid;
-    border-radius: 8px;
-    width: 500px;
-    margin-left: 60%; 
-    background-color: #171719;
-    padding: 20px;
-    margin-left: 8%;
-}
-.contact-text{
-    max-width: 450px;
-}
-.form {
-    height: 700px;
-    justify-content:center;
-    border: #1E45C5 2px solid;
-    text-align: center;
-}
-.input-field{
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-    font-size: 14px;
-}
-input{
-   background-color: var(--light-text);
-   border-radius: 5px;
-}
-.sidebar {
-  width: 280px;
-  height:max-content;
-  background-color: #111111;
-}
-button {
-  padding: 10px;
-  background: none;
-  border-radius: 5px;
-  cursor: pointer;
-  overflow: hidden;
-  border-color: #1E45C5;
-  margin-top: 8%;
-  cursor: pointer;
-  transition: var(--transition);
-  color: #f5f5f5;
-  width: 200px;
-}
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
-}
-.sidebar-header {
-  height: 50px;
-  position: fixed;
-  margin:20px;
-}
-.sidebar-header img{
-   margin-left: 50%;
-}
-.sidebar-inner {
-  width: 300px;
-  height: inherit;
-  padding-bottom: 10px;
-  border-right: 2px #1E45C5 solid;
-  padding-right: 10%;
-  background-color: #111111;
-}
-.sidebar-nav {
-  display: grid;
-  position: fixed;
-   margin-top: 7%;
-   margin-left: 2%;
-}
-.sidebar-footer{
-  margin-top: auto;
-  padding: 30px;
-}
-.sidebar-footer img{
-    width: 80px;
-}
-.sidebar-log-in{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-span{
     font-size: 0.8rem;
-    color: var(--light-text);
-    font-family: "PT Mono", monospace;
-    margin-left: 5px;
-    
+    background-color:var(--Darker-bg);
+    color:var(--light-text);
+    margin-top: 20px;
 }
-.blog-container{
+.gallery .btn:hover{
+      transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(70, 29, 255, 0.3);
+}
+/* tarjetas del forum*/
+.blog-title{
     margin: 0 auto;
     display:column;
     grid-template-columns: repeat(3,1fr);
@@ -327,11 +332,6 @@ span{
     position: absolute;
     max-width: 60px;
 }
-.profile-blog img{
-    padding-left: 10px;
-    position: absolute;
-    max-width: 60px;
-}
 .blog-comment{
     padding-left: 8%;
 }
@@ -339,27 +339,29 @@ span{
  display: flex;
 }
 .blog-comment span{
- color: #1E45C5;
+ color: var(--Blue-bright);
  display: flex;
  margin: 5px;
 }
 .blog-reactions-container{
     display: flex;
     margin-left: 60%;
+    display: inline-flex;
 }
-
 .blog-reactions{
-   margin-left: 20px;
-   
+   margin-left: 20px; 
+   cursor: pointer;
+}
+.blog-reactions img{
+  
 }
 .blog-tags{
-    margin-left: 15%;
-    margin-left: 7%;
-    padding: 10px;
+    margin-left: 30px;
     opacity: 70%;
+    padding-top: 7px;
 }
 .blog-tags span {
-    background-color: #182051;
+    background-color: var(--Blue-base);
     border-radius: 10px;
     padding: 4px 8px;
     font-size: 12px;
@@ -367,4 +369,47 @@ span{
     cursor: pointer;
     margin-top: 21px;
   
+}
+/* seccion de formulario*/
+.contactanos{
+    background-image:-webkit-image-set("https://images-assets.nasa.gov/image/art002e009212/art002e009212~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
+    display: flex;
+}
+.form-container{
+    border: var(--Blue-base) 2px solid;
+    border-radius: 8px;
+    width: 500px;
+    margin-left: 60%; 
+    background-color: var(--Dark);
+    padding: 20px;
+    margin-left: 8%;
+}
+.contact-text{
+    max-width: 450px;
+    display: flex;
+    align-content: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.form {
+    height: 700px;
+    justify-content:center;
+    border: var(--Blue-base) 2px solid;
+    text-align: center;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    font-size: 14px;
+    font-family: "PT Mono", monospace;
+}
+input{
+   background-color: var(--light-text);
+   border-radius: 5px;
+   border-color: none;
+   padding: 7px;
+}
+.form-buttons{
+    margin-left: 70%;
 }
