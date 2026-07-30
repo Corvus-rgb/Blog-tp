@@ -6,7 +6,6 @@
     <title>Land page- Blog astronomico</title>
      <link rel="stylesheet" href="styles.css">
      <link rel="assets" href="img">
-    <script src="https://kit.fontawesome.com/37c86ed8dc.js" crossorigin="anonymous"></script>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
@@ -21,20 +20,20 @@
     <nav class="sidebar-nav">
             <img src="./assets/img/centauri logo 1.png" class="sidebar-logo" />
           <button>
-            <img src="./assets/img/icons(SVG)/star small.svg" />
-            <span>Home</span>
+            <img src="./assets/img/icons(SVG)/home icon.svg" />
+            <a href="#inicio"><span>home</span></a>
           </button>
           <button>
             <img src="./assets/img/icons(SVG)/noticias.svg" />
-            <span>noticias</span>
+            <a href="#noticias"><span>noticias</span></a>
           </button>
           <button>
             <img src="./assets/img/icons(SVG)/galeria.svg" />
-            <span>Galeria</span>
+            <a href="#gallery"><span>galeria</span></a>
           </button>
           <button>
             <img src="./assets/img/icons(SVG)/comment icon-small.svg" />
-            <span>foros</span>
+            <a href="#blog"><span>foros</span></a>
           </button>
           <button>
             <img src="./assets/img/icons(SVG)/cometa.svg" />
@@ -58,7 +57,7 @@
                   <h1>COMUNIDAD ASTRONOMICA CENTAURI </h1>
                   <h2>Astronomía · Telescopios · Astrofotografía · Observación </h2>
                    <p>Expertos en divulgación astronómica y aficionados dispuestos a compartir sus intereses y conocimientos. Aprende a travez de charlas y eventos organizados por la comunidad!</p>
-                   <a class="btn" href="#"contacto>unete a la comunidad!</a>
+                   <a class="btn" href="#contacto">unete a la comunidad!</a>
                 </div>
             </div>
         </section>
@@ -74,7 +73,7 @@
                     <img src="https://www-astronomy-com.translate.goog/wp-content/uploads/2026/05/ASY-BT0726_01.png?resize=1536&_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc,https://www-astronomy-com.translate.goog/science/rcw-36-a-bird-of-prey-sails-away/1443?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
                     <h4>RCW 36: Un ave de rapiña se aleja en barco.</h4>
-                    <h2>Lorem ipsum is simply dummy text</h2>
+                    <h2>Conoce su historia y como sera su futuro trayecto</h2>
                     <p>Esta nebulosa, que se asemeja a un halcón, cuenta en su centro con un cúmulo abierto de estrellas jóvenes y masivas, rodeado de brillantes nubes de gas de hidrógeno.</p>
                     <div class="references"> <p>Por Richard Talcott | Publicado: 28/07/2026</p></div>
                     <div class="card-interactions">
@@ -89,11 +88,11 @@
                 </div>
             </div>
             <div class="card-container">
-                    <img src="./assets/img/card image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
+                    <img src="https://www-astronomy-com.translate.goog/wp-content/uploads/2026/05/NGC-750NGC-751.jpg?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
                     <h4>Maravillas ocultas del universo</h4>
-                    <h2>Estos objetos muestran el cielo profundo, con objetivos para todos los niveles de observación. </h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
+                    <h2>Objetivos para todos los niveles de observación. </h2>
+                    <p> Gracias al equipo actual y al conocimiento avanzado que tenemos sobre cúmulos, nebulosas y galaxias, unos 10.000 objetos de gran belleza están al alcance de los telescopios de aficionados.  </p>
                     <div class="references"> <p>Por David J. Eicher | Publicado: 28/07/2026 </p></div>
                     <div class="card-interactions">
                         <div class="card-reactions">
@@ -107,12 +106,12 @@
                 </div>
             </div>
             <div class="card-container">
-                    <img src="./assets/img/icons(SVG)/ image.png" alt="provisoria 1" class="card-image" width="200px" height="300px">
+                    <img src="https://www.astronomy.com/wp-content/uploads/2026/07/Tony-Hallas-Pelican-Nebula-IC-5070.jpg?w=2560" alt="provisoria 1" class="card-image" width="200px" height="300px">
                 <div class="card-info">
-                    <h4>Lorem ipsum is</h4>
-                    <h2>Lorem ipsum is simply dummy text</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown  </p>
-                    <div class="references"> <p>Por Richard Talcott | Publicado: 28/07/2026</p></div>
+                    <h4>El pelícano resplandeciente</h4>
+                    <h2>Una región de emisión que forma la Nebulosa del Pelícano</h2>
+                    <p>Los flujos de salida bilobulados, como el que se observa en la parte superior del pilar central, revelan la presencia de estrellas aún en formación, que acaban de emerger de sus capullos natales</p>
+                    <div class="references"> <p>Por Tony Hallas de Foresthill | California</p></div>
                     <div class="card-interactions">
                         <div class="card-reactions">
                            <img src="./assets/img/icons(SVG)/star.svg" alt=""><span>4.5k</span>
@@ -129,11 +128,8 @@
     <!-- cards en estilo Foros para poner mas en contexto la idea de la pagina-->
         <section id="blog" class="blog forum">
             <div class="section-title">
-             <h3>publicaciones recientes</h3>
+             <h2>publicaciones recientes</h2>
              <p>Comparte experiencias. cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!</p>
-            </div>
-            <div class="blog-title">
-               <h3>ultimos posts</h3> 
             </div>
                 <div class="blog-card">
                     <div class="profile-blog">
@@ -141,8 +137,9 @@
                     </div>
                     <div class="blog-comment">
                       <span><p>/username00</p></span>
-                      <h3><span>//LOREM IPSUM IS SIMPLY DUMMY TEXT OF</span></h3>
-                      <p>took a galley of type and scrambled it to make a type specimen book?</p>
+                      <h3><span>//¿que les parece este analisis sobre qué pasaría al caer en un agujero negro?</span></h3>
+                      <p>Me interesa saber si la explicación es correcta y si simplifico demasiado alguna parte.
+                       ¿Cambiarian algo para que sea más riguroso sin hacerlo aburrido? </p>
                     </div>
                     <div class="blog-tags">
                         <span>/telescopes</span>
@@ -157,7 +154,57 @@
                                <span>10 respuestas</span>
                             </div>
                         </div>    
-                </div>       
+                </div>  
+                <div class="blog-card">
+                    <div class="profile-blog">
+                        <img src="./assets/img/profile 2.png" alt="profile picture">
+                    </div>
+                    <div class="blog-comment">
+                      <span><p>/matecocido_1</p></span>
+                      <h3><span>//Y si estar solos en el universo es la regla y no la excepción? </span></h3>
+                      <p>Hace poco vi un vídeo que trataba de eso, de como es seguro que hay civilizaciones más 
+                        o menos avanzadas que la nuestra pero que nos sería imposible llegar a comunicarnos siquiera 
+                        con ellos.deberíamos de viajar a la velocidad de la luz, algo que actualmente matemáticamente hablando para nosotros 
+                         es imposible. Entonces aquí viene mi dilema, y si realmente están tan lejos que se les hace imposible viajar
+                          como a nosotros, y si en verdad no hay manera, porque cada vez los estudios apuntan más a qué 
+                          el doblegar el espacio tiempo es físicamente imposible, haciendo así que el estar solos aquí, 
+                          en esta galaxia sin nadie no sea la excepción sino la regla (La paradoja de Fermi). </p>
+                    </div>
+                    <div class="blog-tags">
+                        <span>/telescopes</span>
+                        <span>/astrophotography</span>
+                    </div>
+                        <div class="blog-reactions-container">
+                            <div class="blog-reactions">
+                               <img src="./assets/img/icons(SVG)/star small.svg" alt=""><span>2.0k</span>
+                            </div>
+                            <div class="blog-reactions">
+                               <span>40 respuestas</span>
+                            </div>
+                        </div>    
+                </div> 
+                <div class="blog-card">
+                    <div class="profile-blog">
+                        <img src="./assets/img/profile 3.png" alt="profile picture">
+                    </div>
+                    <div class="blog-comment">
+                      <span><p>/empanadacosmica07</p></span>
+                      <h3><span>Hola , el eclipse de sol del 12 de agosto en Argentina ¿Por dónde va a pasar y a qué hora? </span></h3>
+                      <p>El eclipse de Sol en Argentina el 12 de agosto¡NO OLVIDAR LLEVAR GAFAS DE PROTECCIÓN SOLAR!!!! :D  </p>
+                    </div>
+                    <div class="blog-tags">
+                        <span>/telescopes</span>
+                        <span>/astrophotography</span>
+                    </div>
+                        <div class="blog-reactions-container">
+                            <div class="blog-reactions">
+                               <img src="./assets/img/icons(SVG)/star small.svg" alt=""><span>4.5k</span>
+                            </div>
+                            <div class="blog-reactions">
+                               <span>10 respuestas</span>
+                            </div>
+                        </div>    
+                </div>                  
         </section>
         <!-- galeria, dividida en 2 partes-->
     <section id="gallery" class="gallery">
@@ -165,20 +212,21 @@
             <div class="section-title">
                 <h2>Archivos</h2>
               <h3>Galeria de organismos oficiales</h3>
+              <p>Galeria de imagenes/archivos junto a sus respectivas fuentes y/o autores</p>
             </div> 
         <div class="galeria-flex">
             <div class="archivegallery">
                 <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
+                <img src="https://content.nationalgeographic.com.es/medio/2022/08/02/el-planeta-jupiter_b107cb4f_1280x1280.jpg">
+                <img src="https://starwalk.space/gallery/images/jupiter-appearance-3/1920x1080.jpg">
+                <img src="https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/opinion/crecen-los-efectos-nocivos-de-la-contaminacion-luminica-en-la-astronomia/10964728-4-esl-MX/Crecen-los-efectos-nocivos-de-la-contaminacion-luminica-en-la-astronomia.jpg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERIiUw7ptU14RBgoHE9nHckeLuMOZBdWcEcY7zTkIgA&s=10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2y-gOd3oSX33yQD4YMvs_4t6CalAYXXD5saA3G85bobD6yDghLvsTqG5&s=10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0AKeFhNRklkHO8pDSt5-QEyYkSYyTFSSGLk6lL_KuddTXICOb4aUya8&s=10">
                 <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
-                <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
-                <img src="">
-                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/07/STScI-01KVT4GQMQ5MXV6XDPFPZMXG65.png?fit=clip&crop=faces%2Cfocalpoint&w=300">
-                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/07/STScI-01KVT7DD8N4T05XGZCT15QZEZ9.png?fit=clip&crop=faces%2Cfocalpoint&w=300">
-                <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
-                <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
-                <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
-                <img src="//www.nasa.gov/wp-content/uploads/2026/04/art002e009288orig.jpg?resize=300,200">
-                <img src="https://images-assets.nasa.gov/image/art002e009285/art002e009285~large.jpg?w=900&h=600&fit=crop&crop=faces%2Cfocalpoint">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/330px-Saturn_during_Equinox.jpg">
+                <img src="https://i.blogs.es/47c10d/deep-in-the-heart-of-mordor---ngc-7293-r-andrew-campbell/1366_2000.jpg">
+                <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/locationofeucliddeepfieldsongaiaandplanckskymap.jpg?w=1900&h=1069">
                 <img src="https://images-assets.nasa.gov/image/art002e012090/art002e012090~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint">
             </div>
             <a class="btn" href="#"galeria>ver todo</a>
@@ -186,13 +234,18 @@
         
             <div class="section-title">
               <h3>Galeria de la comunidad</h3>
+              <p>Fotos e ilustraciones de los usuarios!!</p>
             </div> 
         <div class="galeria-flex">
             <div class="communitygallery">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
-                <img src="./assets/img/Image Box gallery.png" alt="galeria imagen provisoria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qiAbFpP9dpceAcV1EPxo77ikYb0AOku2st3J6tXPBKkaVhde-fsp8yLa&s=10" alt="galeria imagen provisoria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRhWbSnpEysmstRL9lLLOHT_zn3TRv4TjCgp2RUzQpm6_sYTZwVWnR5Co&s=10" alt="galeria imagen provisoria">
+                <img src="https://i.ytimg.com/vi/l9-BQqyPH8A/maxresdefault.jpg" alt="galeria imagen provisoria">
+                <img src="https://preview.redd.it/picture-of-jupiter-through-home-telescope-v0-v5bo9q85v5f81.jpg?auto=webp&s=d8dfc9b889dc05c98b9e4162467dcf418802e53e" alt="galeria imagen provisoria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-6ZiOcivuYAt0SbzKAjxISYlKBJSZFmKXBOZJ-TAgkX1IUL2DGeV7sM&s=10">
+                <img src="https://www.infobae.com/resizer/v2/U4LQXDNZBVGA5LFZ5B6RLILBNQ.jpg?auth=23af38c60acc6bfbdb256f086d8d552678a16601076dc7c1150b122f41327ab5&smart=true&width=1200&height=1200&quality=85">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9uET9GDL0S0nRcnQg_YIIhBKo6G3eqUFtfRdNNpa_OleWvNgJ8hr7MzVz&s=10" alt="galeria imagen provisoria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwVD_iqyZexYe5kL8T8xwmK5juuYJv7vEEJrHKBSs3Fi9lrh6xPQbcJnU&s=10" alt="galeria imagen provisoria">
             </div>
              <a class="btn" href="#"galeria>ver galeria</a>
         </div>
@@ -203,13 +256,22 @@
                 <h3>apreciamos tu participacion en el blog! </h3>
 
             </div> 
-        <section id="contact-us" class="contactanos">
+        <section id="contacto" class="contactanos">
            
             <div class="contact-text">
                 <h3>Quieres formar parte de las publicaciones oficiales del foro</h3>
                 <p>Somos un equipo de profesionales y aficinados del internet con el objetivo de divulgar informacion a la par que fortalecemos la comunidad.
                    Todo aquel profesional que desee sumarse al objetivo es bienvenido!
                 </p> 
+                <div class="moderadores">
+                    <h3> Conoce a nuestro equipo!!</h3>
+                    <img src="/assets/img/icons(SVG)/mod icon.svg" alt="">
+                        <img src="/assets/img/icons(SVG)/mod icon.svg" alt="">
+                            <img src="/assets/img/icons(SVG)/mod icon.svg" alt="">
+                                <img src="/assets/img/icons(SVG)/mod icon.svg" alt="">
+                                    <img src="/assets/img/icons(SVG)/mod icon.svg" alt="">
+                </div>
+                <img src="/assets/img/icons(SVG)/satelite- img.png" alt="divisor">
                 <h3> No te pierdas las novedades, crea tu user!
                    <p> Comparte experiencias, cita y debate las noticias mas recientes y comparte tus saberes con la comunidad!</p>
                 </h3>

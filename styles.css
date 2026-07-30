@@ -41,6 +41,7 @@ h3 {
     font-size: 1rem;
     color: var(--Blue-bright);
 }
+ /* h4 unico */
 h4 {
     font-family: "PT Mono", monospace;
     font-size: 0.8rem;
@@ -55,7 +56,7 @@ p {
 
 }
 section {
-    padding: 1rem 5%;
+    padding: 0% 5%;
     max-width: 80vw;
     margin: 0 auto;
 }
@@ -65,6 +66,7 @@ section {
     text-align: center;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--Blue-bright); 
+    margin-top: 50px;
 }
 /* botones del sidebar*/
 button {
@@ -181,10 +183,10 @@ span{
   padding: 30px;
 }
 .sidebar-log-in img{
-    width: 80px;
+    width: 60px;
 }
 .sidebar-log-in-btn{
-    max-width: 60px;
+    max-width: 50px;
     padding: 3px;
 }
  /* cards-seccion de noticias*/
@@ -201,12 +203,14 @@ span{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    max-width: 300px;
  
 }
 .card-image{
     width: 100%;
     object-fit: cover;
     max-height: 180px;
+    max-width: 300px;
 
 }
 .card-info{
@@ -248,12 +252,16 @@ span{
    padding: 3px;
 }
  /* galeria*/
+ .gallery{
+    background-image: -webkit-image-set("https://images-assets.nasa.gov/image/art002e009298/art002e009298~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
+ }
 .galeria-flex{
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     justify-content: center;
-
+    gap: 10px;
+     
 }
  /* galeria 1*/
 .archivegallery {
@@ -269,6 +277,7 @@ span{
     border-radius: 4px;
     transition: var(--transition);
     object-fit: cover;
+    border: var(--Blue-bright) 1px solid;
 }
 .archivegallery img:hover {
     transform: scale(1.03);
@@ -289,10 +298,11 @@ span{
     border-radius: 4px;
     transition: var(--transition);
     object-fit: cover;
+    border: var(--naranja) 1px solid;
 }
 .communitygallery img:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 20px rgba(34, 28, 145, 0.5);
+    box-shadow: 0 0 20px rgba(173, 39, 34, 0.5);
 
 }
 /* boton de galeria por separado para ajustar al contenido*/
@@ -390,6 +400,13 @@ span{
     align-content: baseline;
     gap: 20px;
     flex-wrap: wrap;
+}
+.moderadores h3{
+    color: var(--naranja);
+    margin-bottom: 10px;
+}
+.moderadores img{
+  cursor: pointer;
 }
 .form {
     height: 700px;
