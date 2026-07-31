@@ -23,6 +23,7 @@ body {
     line-height: 1.6;
     display: flex;
     
+    
 }
 h1 {
     font-size: 3.5rem;
@@ -57,7 +58,7 @@ p {
 }
 section {
     padding: 0% 5%;
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 0 auto;
 }
 /* estilo de titulos - divisores de secciones*/
@@ -193,17 +194,25 @@ span{
 .noticias{
     background-image: -webkit-image-set("https://images-assets.nasa.gov/image/art002e009298/art002e009298~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
     object-fit: cover;
+    
 }
 .cards{
-    display: flex;
     column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    display: grid;
+    gap:10px
 }
 .card-container{
     border: 3px solid var(--Blue-bright);
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
     max-width: 300px;
+    max-width: 300px;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 20px;
+    
  
 }
 .card-image{
@@ -216,6 +225,7 @@ span{
 .card-info{
     line-height: 1,5;
     padding: 20px;
+    
 }
 .card-info h2{
     font-size: 0.8rem;
@@ -383,16 +393,18 @@ span{
 /* seccion de formulario*/
 .contactanos{
     background-image:-webkit-image-set("https://images-assets.nasa.gov/image/art002e009212/art002e009212~large.jpg?w=1920&h=1280&fit=clip&crop=faces%2Cfocalpoint");
-    display: flex;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    display: grid;
+    gap: 10px;
 }
 .form-container{
     border: var(--Blue-base) 2px solid;
     border-radius: 8px;
-    width: 500px;
-    margin-left: 60%; 
+    max-width: 500px;
     background-color: var(--Dark);
     padding: 20px;
-    margin-left: 8%;
+    margin-top: 20px;
 }
 .contact-text{
     max-width: 450px;
@@ -429,4 +441,63 @@ input{
 }
 .form-buttons{
     margin-left: 70%;
+}
+
+
+
+
+
+@media (max-height: 1400px) {
+    .sidebar-inner .sidebar-nav {
+        margin-bottom: 5px;
+    }
+
+    .sidebar-inner .sidebar-log-in {
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar-inner {
+        position: fixed;
+        left: -220px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .main {
+        flex-direction: grid;
+        gap: 20px;
+        font-size: 10px;
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main {
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) {
+    .blog-card {
+        flex-direction: grid;
+        gap: 20px;
+        font-size: 10px;
+        align-items: center;
+
+    }
+}
+@media screen and (min-width: 1024px) {
+    .blog-card{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    .profile-blog{
+        display: flex;
+    }
 }
